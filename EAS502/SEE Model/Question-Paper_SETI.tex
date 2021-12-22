@@ -1,0 +1,217 @@
+\documentclass[12pt,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\newcommand\textbox[1]{%
+	\parbox{.333\textwidth}{#1}%
+}
+
+
+
+
+
+% Customised items
+\usepackage[shortlabels]{enumitem}
+
+% Times New Roman
+\usepackage[T1]{fontenc}
+\usepackage{newtxmath,newtxtext}
+% Customised items
+\usepackage[shortlabels]{enumitem}
+
+% Times New Roman
+\usepackage[T1]{fontenc}
+\usepackage{newtxmath,newtxtext}
+
+% Page Setup
+\usepackage[a4paper,
+	bindingoffset=0.2in,%
+	left=0.5in,
+	right=0.5in,
+	top=1in,
+	bottom=1in,%
+	footskip=.25in]{geometry}
+% Code
+\usepackage{courier} %% Sets font for listing as Courier.
+\usepackage{listings, xcolor}
+\lstset{
+	tabsize = 4, %% set tab space width
+	showstringspaces = false, %% prevent space marking in strings, string is defined as the text that is generally printed directly to the console
+	numbers = left, %% display line numbers on the left
+	commentstyle = \color{red}, %% set comment color
+	keywordstyle = \color{blue}, %% set keyword color
+	stringstyle = \color{red}, %% set string color
+	rulecolor = \color{black}, %% set frame color to avoid being affected by text color
+	basicstyle = \small \ttfamily , %% set listing font and size
+	breaklines = true, %% enable line breaking
+	numberstyle = \tiny,
+}
+\author{Yonten Jamtsho}
+\begin{document}
+	\begin{center}
+		[This question paper contains \textbf{\textit{two}} printed pages]
+	\end{center}
+	
+	\flushleft \textbf{BSc(IT)/2020/I/F/ITP102/I} 	\hfill \textbf{Student No: .................................}
+	
+	
+	% Title
+	\begin{center}
+		\textbf{Semester End Examination, Spring 2021} \\
+		\textbf{Royal University of Bhutan} \\
+		\textbf{Gyalpozhing College of Information Technology} \\
+		\textbf{BSc in Information Technology} - \textbf{Year I, Semester I} \\
+		\textbf{ITP102 : Object Oriented Programming Fundamentals} \\
+		
+	\end{center}
+
+	\flushleft \textbf{Time: 3 Hours} \hfill \textbf{Max. Marks: 50}
+	\vspace{0.3cm}
+	
+	\hrule
+	\vspace{0.1cm}
+	\textit{Write your Student number on the top immediately on receipt of this question paper. All questions are compulsory, and marks are given at the end of each question. Parts of a question should be answered together. Spend the first 10 minutes in reading the questions.}
+	\vspace{0.1cm}
+	\hrule
+	
+	\vspace{0.2cm}
+    
+    % Part A title
+    \begin{center}
+    	\noindent \textbf{PART - A} \textbf{ [5 Marks]}\\
+    	\noindent \textit{Answer all the questions} 
+    \end{center}
+    
+    % Keep space between PAT A and MCQ
+    \vspace{0.5cm}
+    
+    % MQC Title
+    \noindent \textbf{Multiple Choice Questions} \hfill \textbf{[5 x 1 = 5]}
+    
+    % Begin your question with customized numbered list
+    \begin{enumerate}[start=1,label={\bfseries Q\arabic*)}]
+    	% Reduce the space between items
+    	\itemsep0.2em
+    	\item What are the relationships between the below-mentioned classes?\\
+    	\textit{Vehicle, Suzuki, Hyundai}
+    	\item[] 
+    	\begin{oneparchoices}
+    		\choice All three are super classest % \hspace is used to keep space between choice
+    		\choice All three are sub classes 
+    		\choice Suzuki is the super class, Vehicle and Hyundai are the subclass of Suzuki
+    		\choice Vehicle is the super class, Suzuki and Hyundai are the sub class of Vehicle
+    	\end{oneparchoices}
+    	
+    	\item  How would you declare a variable storing average grade?
+    	\item[] 
+    	\begin{oneparchoices}
+    		\choice double grade = "30.0"; % \hspace is used to keep space between choice
+    		\choice double grade = 30.0; 
+    		\choice int grade = "30.0";
+    		\choice int grade = 30.0;
+    	\end{oneparchoices}
+    	
+    
+    	\item What value is placed in x?\\
+    	\textit{x = 60 > 100 ? 0 : 1;}
+    	\item[]   
+    	\begin{oneparchoices}
+    		\choice  0% \hspace is used to keep space between choice
+    		\choice  100
+    		\choice 1
+    		\choice 60
+    	\end{oneparchoices}
+    	
+    	\item  What is the output of the given code? 
+    	\begin{lstlisting}[language=Java][fragile]
+    		class Output{
+    			public static void main(String[] args) {
+    				int a = 1;
+    				int b = 2;
+    				int c; int d;
+    				c = ++b;
+    				d = a++;
+    				c++;
+    				b++;
+    				++a;
+    				System.out.println(a + " " + " " + b + " " + c);
+    			}
+    		}
+    	\end{lstlisting}
+    	\item[]   
+    	\begin{oneparchoices}
+    		\choice  3 4 4% \hspace is used to keep space between choice
+    		\choice  3 2 2 
+    		\choice 2 4 4
+    		\choice 4 4 4
+    	\end{oneparchoices}
+    	
+    	\item In character stream I/O, a single read/write operation performs
+    	\item[]   
+    	\begin{oneparchoices}
+    		\choice  Two bytes read/write at a time.% \hspace is used to keep space between choice
+    		\choice  Eight bytes read/write at a time.
+    		\choice One byte read/write at a time.
+    		\choice Five bytes read/ write at a time.
+    	\end{oneparchoices}
+    \end{enumerate}
+    
+   
+    \vspace{0.1mm}
+    % Part B title
+    \begin{center}
+    	\textbf{PART - B} \textbf{[15 Marks]}\\
+    	\noindent \textit{SHORT ANSWER QUESTION} \\
+    	\noindent \textit{Answer all the questions} 
+    \end{center}
+    
+    \begin{enumerate}[start=1,label={\bfseries Q\arabic*)}]
+    
+    	\item What is Error in Java. Give Example \hfill \textbf{[1.5]}
+    	\item List with example, the methods to print the exception Messages. \hfill \textbf{[3]}
+    	\item Write one difference between Testing Debugging.  \hfill \textbf{[1]}
+    	\item When do we use \textbf{this}  and \textbf{super} keyword in java. Explain with code snippet.\hfill \textbf{[2]}
+    	\item Write down three differences between abstract class and interface. \hfill \textbf{[3]}
+    	\item What is Encapsulation in Java. Explain how Java achieves Encapsulation Principle. \hfill \textbf{[1.5]}
+    	\item What is Command Line Argument.\hfill \textbf{[0.5]}
+    	\item Draw the Java Architecture diagram. \hfill \textbf{[1.5]}
+    \end{enumerate}
+    \pagebreak
+    % Part C title
+    \begin{center}
+    	\textbf{PART - III} \textbf{[25 Marks]}\\
+    	\noindent \textit{LONG ANSWER QUESTIONS} \\
+    	\noindent \textit{Answer all the questions}  
+    \end{center}
+    
+    \begin{enumerate}[start=1,label={\bfseries Q\arabic*)}]
+    	\item Create a custom exception called \textbf{MyException} and use \textbf{MyException} in a class \textbf{MyException1} and print the exception. Remember, your customException should have toString() method.\hfill\textbf{[5]}  	
+    	\item Finding, \textbf{a} power \textbf{b}.  Write a java program that calculates \textbf{a} power \textbf{b}.  The \textbf{a} can be either int or float. The \textbf{b} can only be an int. Use constructor overloading and method overloading to calculate \textbf{power (a, b)}.\\
+    	Example Input and Output:\\
+    	power(2.5, 2) -> 6.25 \\power(25, 2) -> 625\\
+    	\textbf{Note: Do not use inbuilt function pow.}  \hfill\textbf{[5]}
+    	\item  \textbf{ListADT} has the following methods. \\
+    	
+    	Methods:
+    	\begin{enumerate}
+    		\item  \textbf{ListADT()}: Constructor
+    		\item \textbf{add(element)}: Takes an int element to add into Array. The return type is void.
+    		\item \textbf{contains(element)}: Takes an int element and returns whether it is present in the Array or not. The return type is boolean.
+    		\item \textbf{get(index)}: Takes an int index and returns the element of that index. The return type is int.
+    		\item \textbf{size()}: Returns the size of Array. The return type is int.
+    		\item \textbf{toString()}: Converts the given input into the String format
+    	\end{enumerate}
+    	Design an interface where this can be used for various applications and create a class \textbf{ListADTClass} which implements this interface. 
+    	\hfill\textbf{[10]} 
+    	\item Create a class \textbf{OpenFileExample} to implement opening and reading a file using FileReader class. Do not forget to handle exception. Assume your own location of file in the computer.\hfill\textbf{[5]}
+    	
+    	
+    	
+    	$------------ ------BEST WISHES----------------------------$
+    \end{enumerate}
+    
+    
+\end{document}
